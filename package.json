@@ -1,0 +1,61 @@
+{
+  "name": "react-resize-render",
+  "version": "1.0.0",
+  "description": "A render prop component for react that injects the window dimenions. Uses a single shared, debounced event listener across all instances in your application.",
+  "main": "index.js",
+  "module": "es/index.js",
+  "sideEffects": false,
+  "scripts": {
+    "build": "node ./tools/build.js",
+    "watch": "babel ./modules -d . --ignore __tests__ --watch",
+    "prepublishOnly": "node ./tools/build.js",
+    "clean": "git clean -fdX .",
+    "lint": "eslint modules",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sheldonj/react-resize-render.git"
+  },
+  "keywords": [
+    "react",
+    "render",
+    "props",
+    "window",
+    "resize"
+  ],
+  "author": "James Sheldon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sheldonj/react-resize-render/issues"
+  },
+  "homepage": "https://github.com/sheldonj/react-resize-render#readme",
+  "peerDependencies": {
+    "react": ">=15"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.2.3",
+    "babel-jest": "^23.0.0",
+    "babel-plugin-dev-expression": "^0.2.1",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-plugin-transform-react-remove-prop-types": "^0.4.13",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-1": "^6.24.1",
+    "eslint": "^4.19.1",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-react": "^7.8.2",
+    "gzip-size": "^4.1.0",
+    "prettier": "^1.12.1",
+    "pretty-bytes": "^5.0.0",
+    "react": "^16.4.0",
+    "rollup": "^0.59.3",
+    "rollup-plugin-babel": "^3.0.4",
+    "rollup-plugin-commonjs": "^9.1.3",
+    "rollup-plugin-node-resolve": "^3.3.0",
+    "rollup-plugin-replace": "^2.0.0",
+    "rollup-plugin-uglify": "^4.0.0"
+  },
+  "dependencies": {}
+}
