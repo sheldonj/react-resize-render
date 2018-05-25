@@ -3,9 +3,9 @@
   "version": "1.0.2",
   "description": "A render prop component for react that injects the window dimenions. Uses a single shared, debounced event listener across all instances in your application.",
   "files": [
-    "RenderResize.js",    
+    "RenderResize.js",
     "es",
-    "index.js",    
+    "index.js",
     "umd"
   ],
   "main": "modules/index.js",
@@ -50,7 +50,10 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-1": "^6.24.1",
     "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.8.2",
     "gzip-size": "^4.1.0",
     "prettier": "^1.12.1",
