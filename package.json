@@ -8,7 +8,7 @@
     "index.js",    
     "umd"
   ],
-  "main": "index.js",
+  "main": "modules/index.js",
   "module": "es/index.js",
   "sideEffects": false,
   "scripts": {
