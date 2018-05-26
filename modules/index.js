@@ -1,1 +1,1 @@
-export RenderResize from "./RenderResize";
+export { default as RenderResize } from './RenderResize';

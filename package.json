@@ -1,6 +1,6 @@
 {
   "name": "react-resize-render",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A render prop component for react that injects the window dimenions. Uses a single shared, debounced event listener across all instances in your application.",
   "files": [
     "RenderResize.js",
@@ -8,7 +8,7 @@
     "index.js",
     "umd"
   ],
-  "main": "modules/index.js",
+  "main": "index.js",
   "module": "es/index.js",
   "sideEffects": false,
   "scripts": {
