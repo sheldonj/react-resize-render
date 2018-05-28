@@ -1,6 +1,6 @@
 {
   "name": "react-resize-render",
-  "version": "1.0.4",
+  "version": "0.0.0-development",
   "description": "A render prop component for react that injects the window dimenions. Uses a single shared, debounced event listener across all instances in your application.",
   "files": [
     "RenderResize.js",
@@ -19,11 +19,12 @@
     "lint": "./node_modules/.bin/eslint modules",
     "test": "jest",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "semantic-release": "semantic-release"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sheldonj/react-resize-render.git"
+    "url": "https://github.com/sheldonj/react-resize-render.git"
   },
   "keywords": [
     "react",
@@ -71,10 +72,11 @@
     "@storybook/addon-links": "^3.4.6",
     "@storybook/addons": "^3.4.6",
     "babel-core": "^6.26.3",
-    "babel-runtime": "^6.26.0"
+    "babel-runtime": "^6.26.0",
+    "semantic-release": "^15.5.0"
   },
   "dependencies": {
     "lodash.debounce": "^4.0.8",
-    "prop-types": "^15.6.1"    
+    "prop-types": "^15.6.1"
   }
 }
