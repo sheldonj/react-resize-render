@@ -16,8 +16,7 @@
     "watch": "babel ./modules -d . --ignore __tests__ --watch",
     "prepublishOnly": "node ./tools/build.js",
     "clean": "git clean -fdX .",
-    "lint": "./node_modules/.bin/eslint modules",
-    "test": "jest",
+    "lint": "./node_modules/.bin/eslint modules",   
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "semantic-release": "semantic-release"
