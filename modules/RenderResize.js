@@ -38,14 +38,17 @@ class RenderResize extends Component {
   }
   componentDidMount() {
     RenderResize.addResizeListener(this.handleResize);
-    // eslint-disable-next-line
-    this.setState({ width: window.innerWidth, height: window.innerHeight });
+    this.setDimensions(window.innerWidth, window.innerHeight);
   }
   componentWillUnmount() {
     RenderResize.removeResizeListener(this.handleResize);
   }
+  setDimensions(width, height) {
+    this.setState({ width, height });
+  }
   handleResize(dimensions) {
-    this.setState(dimensions);
+    const { width, height } = dimensions;
+    this.setDimensions(width, height);
   }
   render() {
     return this.props.render(this.state);
