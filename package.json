@@ -22,6 +22,10 @@
     "semantic-release": "semantic-release",
     "travis-deploy-once": "travis-deploy-once"
   },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "tag": "latest"
+  },
   "release": {
     "analyzeCommits": "semantic-release-tamia/analyzeCommits",
     "generateNotes": "semantic-release-tamia/generateNotes",
