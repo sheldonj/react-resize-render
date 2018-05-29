@@ -18,7 +18,7 @@
     "clean": "git clean -fdX .",
     "lint": "./node_modules/.bin/eslint modules",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
+    "build-storybook": "build-storybook -c .storybook -o docs",
     "semantic-release": "semantic-release",
     "travis-deploy-once": "travis-deploy-once"
   },
