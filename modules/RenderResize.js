@@ -56,5 +56,4 @@ class RenderResize extends Component {
   }
 }
 
-// Just a comment to force a version increment.
 export default RenderResize;

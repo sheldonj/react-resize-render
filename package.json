@@ -27,6 +27,13 @@
     "tag": "latest"
   },
   "release": {
+    "prepare": [
+      {
+        "path": "@semantic-release/changelog",
+        "changelogFile": "CHANGES.md"
+      },
+      "@semantic-release/git"
+    ],
     "analyzeCommits": "semantic-release-tamia/analyzeCommits",
     "generateNotes": "semantic-release-tamia/generateNotes",
     "verifyRelease": "semantic-release-tamia/verifyRelease"
@@ -53,6 +60,8 @@
     "react-dom": ">=16"
   },
   "devDependencies": {
+    "@semantic-release/changelog": "^2.0.2",
+    "@semantic-release/git": "^5.0.0",
     "@storybook/addon-actions": "^3.4.6",
     "@storybook/addon-links": "^3.4.6",
     "@storybook/addons": "^3.4.6",
