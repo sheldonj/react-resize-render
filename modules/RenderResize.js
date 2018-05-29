@@ -56,4 +56,5 @@ class RenderResize extends Component {
   }
 }
 
+// nuked some the tamia semantic release stuff cause I have no idea.
 export default RenderResize;
