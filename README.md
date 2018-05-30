@@ -1,6 +1,8 @@
 # react-resize-render
 
-[![Build Status](https://travis-ci.org/sheldonj/react-resize-render.svg?branch=master)](https://travis-ci.org/sheldonj/react-resize-render) [![npm version](https://badge.fury.io/js/react-resize-render.svg)](https://badge.fury.io/js/react-resize-render)
+[![Build Status](https://travis-ci.org/sheldonj/react-resize-render.svg?branch=master)](https://travis-ci.org/sheldonj/react-resize-render) [![npm version](https://badge.fury.io/js/react-resize-render.svg)](https://badge.fury.io/js/react-resize-render) [![npm](https://img.shields.io/npm/dt/react-resize-render.svg)](https://www.npmjs.com/package/react-resize-render)
+
+
 
 A render prop solution for tracking window resize events in a browser. Uses a single event handler for all instances of the render prop componenent to attempt to maximize perforance by limiting multiple resize events.
 
