@@ -14,6 +14,7 @@
   "scripts": {
     "build": "node ./tools/build.js",
     "watch": "babel ./modules -d . --ignore __tests__ --watch",
+    "prepublish": "build-storybook -c .storybook -o docs",
     "prepublishOnly": "node ./tools/build.js",
     "clean": "git clean -fdX .",
     "lint": "./node_modules/.bin/eslint modules",
