@@ -2,19 +2,14 @@ import { Component } from 'react';
 import PropTypes from 'prop-types';
 import debounce from 'lodash.debounce';
 
-class RenderResize extends Component {
-  static propTypes = {
-    render: PropTypes.func.isRequired
-  };
-
-  /** START STATIC METHODS FOR OPTIMIZING RESIZE HANDLERS */
+export default class RenderResize extends Component {
   static debounceInterval = 10;
   static listeners = [];
+  static deboundedResize = null;
   static handleResize = function handleResize() {
     const dimensions = { width: window.innerWidth, height: window.innerHeight };
     RenderResize.listeners.forEach(listener => listener(dimensions));
   };
-  static deboundedResize = null;
   static addResizeListener = function addResizeListener(cb) {
     RenderResize.listeners.push(cb);
     // not sure if this is the best way to attach/detach the window resize.
@@ -31,7 +26,9 @@ class RenderResize extends Component {
       RenderResize.deboundedResize = null;
     }
   };
-  /** END STATIC METHODS FOR OPTIMIZING RESIZE HANDLERS */
+  static propTypes = {
+    render: PropTypes.func.isRequired
+  };
   constructor(props) {
     super(props);
     this.state = { width: 0, height: 0 };
@@ -55,6 +52,3 @@ class RenderResize extends Component {
     return this.props.render(this.state);
   }
 }
-
-// nuked some the tamia semantic release stuff cause I have no idea.
-export default RenderResize;
