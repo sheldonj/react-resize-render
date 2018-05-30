@@ -38,3 +38,7 @@ exec("rollup -c -f umd -o umd/resize-render.min.js", {
 const size = gzipSize.sync(fs.readFileSync("umd/resize-render.min.js"));
 
 console.log("\ngzipped, the UMD build is %s", prettyBytes(size));
+
+exec("npm run build-storybook")
+
+console.log("\nbuilding react storybook documentation");
