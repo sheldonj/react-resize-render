@@ -6,7 +6,7 @@ export default class RenderResize extends Component {
   static debounceInterval = 10;
   static listeners = [];
   static deboundedResize = null;
-  static handleResize = function handleResize() {
+  static applyResize = function applyResize() {
     const dimensions = { width: window.innerWidth, height: window.innerHeight };
     RenderResize.listeners.forEach(listener => listener(dimensions));
   };
@@ -14,7 +14,7 @@ export default class RenderResize extends Component {
     RenderResize.listeners.push(cb);
     // not sure if this is the best way to attach/detach the window resize.
     if (!RenderResize.deboundedResize) {
-      RenderResize.deboundedResize = debounce(RenderResize.handleResize, RenderResize.debouncInterval);
+      RenderResize.deboundedResize = debounce(RenderResize.applyResize, RenderResize.debouncInterval);
       window.addEventListener('resize', RenderResize.deboundedResize, false);
     }
   };
