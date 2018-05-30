@@ -12,7 +12,6 @@ export default class RenderResize extends Component {
   };
   static addResizeListener = function addResizeListener(cb) {
     RenderResize.listeners.push(cb);
-    // not sure if this is the best way to attach/detach the window resize.
     if (!RenderResize.deboundedResize) {
       RenderResize.deboundedResize = debounce(RenderResize.applyResize, RenderResize.debouncInterval);
       window.addEventListener('resize', RenderResize.deboundedResize, false);
