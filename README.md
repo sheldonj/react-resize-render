@@ -6,11 +6,12 @@ A render prop solution for tracking window resize events in a browser. Uses a si
 
 ## Getting Started
 
-```
+```js
   npm install react-resize-render -S 
 ```
 
-```
+```js
+// using ES6 modules
   import RenderResize from 'react-resize-render';
 
   <RenderResize
