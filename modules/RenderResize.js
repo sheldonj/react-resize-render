@@ -45,6 +45,7 @@ export default class RenderResize extends Component {
   }
   handleResize(dimensions) {
     const { width, height } = dimensions;
+
     this.setDimensions(width, height);
   }
   render() {
